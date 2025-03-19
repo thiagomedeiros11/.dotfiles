@@ -10,3 +10,13 @@ lspconfig.ts_ls.setup({
 lspconfig.jsonls.setup({
   capabilities = capabilities,
 })
+
+lspconfig.rust_analyzer.setup({
+  capabilities = capabilities,
+  settings = {
+    ["rust-analyzer"] = {
+      cargo = { allFeatures = true },
+      checkOnSave = { command = "clippy" },
+    },
+  },
+})
