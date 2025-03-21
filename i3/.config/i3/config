@@ -219,4 +219,4 @@ exec_always --no-startup-id ~/.config/polybar/launch_polybar.sh
 exec_always feh --bg-scale ~/Images/5d4c7beadae6c7f2baa890ad11bb6c1e.jpg
 
 # Red Shift Night Light
-exec --no-startup-id redshift -c ~/.config/redshift/redshift.conf
+exec --no-startup-id redshift -O 4000
