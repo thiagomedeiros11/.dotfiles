@@ -220,3 +220,13 @@ exec_always feh --bg-scale ~/Images/5d4c7beadae6c7f2baa890ad11bb6c1e.jpg
 
 # Red Shift Night Light
 exec --no-startup-id redshift -O 4000
+
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+
+# Desativa DPMS e o screensaver
+exec_always --no-startup-id xset -dpms
+exec_always --no-startup-id xset s off
+exec_always --no-startup-id xset s noblank
+
+exec --no-startup-id xrdb -merge ~/.Xresources
+
