@@ -16,16 +16,17 @@ return require("packer").startup(function(use)
 
   use("nvim-telescope/telescope.nvim")
 
-  use {
-  "folke/tokyonight.nvim",
-  config = function()
-    require("tokyonight").setup({
-      style = "night",
-      transparent = false,
-    })
-    vim.cmd("colorscheme tokyonight")
-  end
-}
+    use {
+      "folke/tokyonight.nvim",
+      config = function()
+        require("tokyonight").setup({
+          style = "night",
+          transparent = false,
+        })
+        vim.cmd("colorscheme tokyonight")
+      end
+    }
+
   
   -- Auto Complete
   use {
@@ -45,3 +46,5 @@ return require("packer").startup(function(use)
   use 'windwp/nvim-autopairs'
 
 end)
+
+

@@ -206,8 +206,7 @@ exec --no-startup-id flameshot
 bindsym Ctrl+p exec flameshot gui
 
 # Monitor Position
-# Hdmi monitor at left
-exec --no-startup-id xrandr --output HDMI-1 --left-of eDP-1
+exec --no-startup-id xrandr --output HDMI-1 --mode 1920x1080 --rate 75 --left-of eDP-1
 
 # Audio tray
 exec --no-startup-id pasystray
@@ -219,7 +218,7 @@ exec_always --no-startup-id ~/.config/polybar/launch_polybar.sh
 exec_always feh --bg-scale ~/Images/5d4c7beadae6c7f2baa890ad11bb6c1e.jpg
 
 # Red Shift Night Light
-exec --no-startup-id redshift -O 4000
+exec --no-startup-id redshift -O 4200
 
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
