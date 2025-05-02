@@ -206,7 +206,7 @@ exec --no-startup-id flameshot
 bindsym Ctrl+p exec flameshot gui
 
 # Monitor Position
-exec --no-startup-id xrandr --output HDMI-1 --mode 1920x1080 --rate 75 --left-of eDP-1
+exec --no-startup-id xrandr --output HDMI-1 --mode 1920x1080 --rate 75 --right-of eDP-1
 
 # Audio tray
 exec --no-startup-id pasystray
