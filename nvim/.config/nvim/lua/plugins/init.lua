@@ -16,16 +16,32 @@ return require("packer").startup(function(use)
 
   use("nvim-telescope/telescope.nvim")
 
-    use {
-      "folke/tokyonight.nvim",
+    use({
+      "rose-pine/neovim",
+      as = "rose-pine",
       config = function()
-        require("tokyonight").setup({
-          style = "night",
-          transparent = false,
+        require("rose-pine").setup({
+          variant = "auto",         -- auto | main | moon | dawn
+          dark_variant = "main",    -- main | moon | dawn
+          dim_inactive_windows = false,
+          extend_background_behind_borders = true,
+
+          enable = {
+            terminal = true,
+            legacy_highlights = true,
+            migrations = true,
+          },
+
+          styles = {
+            bold = true,
+            italic = false,
+            transparency = false,
+          },
         })
-        vim.cmd("colorscheme tokyonight")
+
+        vim.cmd("colorscheme rose-pine")
       end
-    }
+    })
 
   
   -- Auto Complete
