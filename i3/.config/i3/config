@@ -233,3 +233,7 @@ exec --no-startup-id xrdb -merge ~/.Xresources
 
 # BG
 exec --no-startup-id feh --randomize --bg-fill /home/dell/Images/wellpapper.jpeg
+
+# picom (opacity)
+exec --no-startup-id picom
+
