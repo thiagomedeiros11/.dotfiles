@@ -186,18 +186,29 @@ bindsym $mod+r mode "resize"
 
 ## PERSONAL CHANGES ##
 
-# Tokyo Night Colors
-set $background #1a1b26
-set $foreground #a9b1d6
-set $border #16161e
-set $focused_border #292e42
-set $urgent_border #f7768e
+# Rosé Pine colorscheme colors
+set $base           #191724
+set $surface        #1f1d2e
+set $overlay        #26233a
+set $muted          #6e6a86
+set $subtle         #908caa
+set $text           #e0def4
+set $love           #eb6f92
+set $gold           #f6c177
+set $rose           #ebbcba
+set $pine           #31748f
+set $foam           #9ccfd8
+set $iris           #c4a7e7
+set $highlightlow   #21202e
+set $highlightmed   #403d52
+set $highlighthigh  #524f67
 
-# Tokyo Night Windows
-client.focused          $focused_border $focused_border $foreground $foreground
-client.focused_inactive $border $border $foreground $background
-client.unfocused        $border $border $foreground $background
-client.urgent           $urgent_border $urgent_border $foreground $background
+client.focused           $pine    $base $text  $pine      $pine  
+client.focused_inactive  $text    $base $text  $subtle    $surface
+client.unfocused         $text    $base $text  $overlay   $overlay
+client.urgent            $text    $base $text  $love      $love
+client.placeholder       $base    $base $text  $overlay   $overlay
+client.background        $base
 
 # Start flameshot on startup
 exec --no-startup-id flameshot
@@ -208,24 +219,17 @@ bindsym Ctrl+p exec flameshot gui
 # Monitor Position
 exec --no-startup-id xrandr --output HDMI-1 --mode 1920x1080 --rate 75 --right-of eDP-1
 
-# Audio tray
+# PulseAudio tray
 exec --no-startup-id pasystray
 
-# Polybar init
+# Exec Polybar
 exec_always --no-startup-id ~/.config/polybar/launch_polybar.sh
 
-# Bg
-exec_always feh --bg-scale ~/Images/5d4c7beadae6c7f2baa890ad11bb6c1e.jpg
-
-# Red Shift Night Light
+# Redshift night light
 exec --no-startup-id redshift -O 4200
 
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
-
-# Desativa DPMS e o screensaver
-exec_always --no-startup-id xset -dpms
-exec_always --no-startup-id xset s off
-exec_always --no-startup-id xset s noblank
-
+# Apply xresources
 exec --no-startup-id xrdb -merge ~/.Xresources
 
+# BG
+exec --no-startup-id feh --randomize --bg-fill /home/dell/Images/wellpapper.jpeg
