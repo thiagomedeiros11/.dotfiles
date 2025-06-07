@@ -233,7 +233,3 @@ exec --no-startup-id xrdb -merge ~/.Xresources
 
 # BG
 exec --no-startup-id feh --randomize --bg-fill /home/dell/Images/wellpapper.jpeg
-
-# Mouse Speed
-exec --no-startup-id xinput --set-prop "pointer:2.4G Wireless Device" "libinput Accel Profile Enabled" 1, 0, 0
-exec --no-startup-id xinput --set-prop "pointer:2.4G Wireless Device" "libinput Accel Speed" 0.6
