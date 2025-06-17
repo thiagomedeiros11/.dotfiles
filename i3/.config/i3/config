@@ -186,38 +186,11 @@ bindsym $mod+r mode "resize"
 
 ## PERSONAL CHANGES ##
 
-# Rosé Pine colorscheme colors
-set $base           #191724
-set $surface        #1f1d2e
-set $overlay        #26233a
-set $muted          #6e6a86
-set $subtle         #908caa
-set $text           #e0def4
-set $love           #eb6f92
-set $gold           #f6c177
-set $rose           #ebbcba
-set $pine           #31748f
-set $foam           #9ccfd8
-set $iris           #c4a7e7
-set $highlightlow   #21202e
-set $highlightmed   #403d52
-set $highlighthigh  #524f67
-
-client.focused           $pine    $base $text  $pine      $pine  
-client.focused_inactive  $text    $base $text  $subtle    $surface
-client.unfocused         $text    $base $text  $overlay   $overlay
-client.urgent            $text    $base $text  $love      $love
-client.placeholder       $base    $base $text  $overlay   $overlay
-client.background        $base
-
 # Start flameshot on startup
 exec --no-startup-id flameshot
 
 # Shortcut Flameshot
 bindsym Ctrl+p exec flameshot gui
-
-# Monitor Position
-exec --no-startup-id xrandr --output HDMI-1 --mode 1920x1080 --rate 75 --right-of eDP-1
 
 # PulseAudio tray
 exec --no-startup-id pasystray
@@ -227,9 +200,3 @@ exec_always --no-startup-id ~/.config/polybar/launch_polybar.sh
 
 # Redshift night light
 exec --no-startup-id redshift -O 3500
-
-# Apply xresources
-exec --no-startup-id xrdb -merge ~/.Xresources
-
-# BG
-exec --no-startup-id feh --randomize --bg-fill /home/dell/Images/wellpapper.jpeg
