@@ -200,3 +200,7 @@ exec_always --no-startup-id ~/.config/polybar/launch_polybar.sh
 
 # Redshift night light
 exec --no-startup-id redshift -O 3500
+
+# Show the same thing in both screens
+exec --no-startup-id xrandr --output HDMI-1 --mode 1920x1080 --same-as eDP-1 --primary
+
