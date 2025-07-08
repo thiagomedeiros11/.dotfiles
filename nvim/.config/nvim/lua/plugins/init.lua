@@ -16,35 +16,25 @@ return require("packer").startup(function(use)
 
   use("nvim-telescope/telescope.nvim")
 
-    use({
-      "rose-pine/neovim",
-      as = "rose-pine",
-      config = function()
-        require("rose-pine").setup({
-          variant = "auto",         -- auto | main | moon | dawn
-          dark_variant = "main",    -- main | moon | dawn
-          dim_inactive_windows = false,
-          extend_background_behind_borders = true,
-
-          enable = {
-            terminal = true,
-            legacy_highlights = true,
-            migrations = true,
-          },
-
+   use({
+    "EdenEast/nightfox.nvim",
+    config = function()
+      require("nightfox").setup({
+        options = {
+          transparent = false,
+          terminal_colors = true,
+          dim_inactive = false,
           styles = {
-            bold = true,
-            italic = false,
-            transparency = false,
+            comments = "italic",
+            keywords = "bold",
+            types = "italic,bold",
           },
-        })
+        },
+      })
+      vim.cmd("colorscheme nightfox")
+    end
+  }) 
 
-        vim.cmd("colorscheme rose-pine")
-      end
-    })
-
-  
-  -- Auto Complete
   use {
   "hrsh7th/nvim-cmp",
   requires = {

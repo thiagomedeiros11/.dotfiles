@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/dell/.cache/nvim/packer_hererocks/2.1.1741730670/share/lua/5.1/?.lua;/home/dell/.cache/nvim/packer_hererocks/2.1.1741730670/share/lua/5.1/?/init.lua;/home/dell/.cache/nvim/packer_hererocks/2.1.1741730670/lib/luarocks/rocks-5.1/?.lua;/home/dell/.cache/nvim/packer_hererocks/2.1.1741730670/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/dell/.cache/nvim/packer_hererocks/2.1.1741730670/lib/lua/5.1/?.so"
+local package_path_str = "/home/dell/.cache/nvim/packer_hererocks/2.1.1748459687/share/lua/5.1/?.lua;/home/dell/.cache/nvim/packer_hererocks/2.1.1748459687/share/lua/5.1/?/init.lua;/home/dell/.cache/nvim/packer_hererocks/2.1.1748459687/lib/luarocks/rocks-5.1/?.lua;/home/dell/.cache/nvim/packer_hererocks/2.1.1748459687/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/dell/.cache/nvim/packer_hererocks/2.1.1748459687/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -109,6 +109,12 @@ _G.packer_plugins = {
     path = "/home/dell/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/ThePrimeagen/harpoon"
   },
+  ["nightfox.nvim"] = {
+    config = { "\27LJ\2\nü\1\0\0\5\0\v\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\3\0005\4\4\0=\4\5\3=\3\a\2B\0\2\0016\0\b\0009\0\t\0'\2\n\0B\0\2\1K\0\1\0\25colorscheme nightfox\bcmd\bvim\foptions\1\0\1\foptions\0\vstyles\1\0\3\rkeywords\tbold\rcomments\vitalic\ntypes\16italic,bold\1\0\4\17dim_inactive\1\20terminal_colors\2\16transparent\1\vstyles\0\nsetup\rnightfox\frequire\0" },
+    loaded = true,
+    path = "/home/dell/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
+    url = "https://github.com/EdenEast/nightfox.nvim"
+  },
   ["nvim-autopairs"] = {
     loaded = true,
     path = "/home/dell/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
@@ -139,12 +145,6 @@ _G.packer_plugins = {
     path = "/home/dell/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
-  ["rose-pine"] = {
-    config = { "\27LJ\2\n¼\2\0\0\4\0\v\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\2B\0\2\0016\0\b\0009\0\t\0'\2\n\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\vstyles\1\0\3\17transparency\1\vitalic\1\tbold\2\venable\1\0\3\15migrations\2\22legacy_highlights\2\rterminal\2\1\0\6\17dark_variant\tmain\vstyles\0\fvariant\tauto\venable\0%extend_background_behind_borders\2\25dim_inactive_windows\1\nsetup\14rose-pine\frequire\0" },
-    loaded = true,
-    path = "/home/dell/.local/share/nvim/site/pack/packer/start/rose-pine",
-    url = "https://github.com/rose-pine/neovim"
-  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/dell/.local/share/nvim/site/pack/packer/start/telescope.nvim",
@@ -158,10 +158,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: rose-pine
-time([[Config for rose-pine]], true)
-try_loadstring("\27LJ\2\n¼\2\0\0\4\0\v\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\2B\0\2\0016\0\b\0009\0\t\0'\2\n\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\vstyles\1\0\3\17transparency\1\vitalic\1\tbold\2\venable\1\0\3\15migrations\2\22legacy_highlights\2\rterminal\2\1\0\6\17dark_variant\tmain\vstyles\0\fvariant\tauto\venable\0%extend_background_behind_borders\2\25dim_inactive_windows\1\nsetup\14rose-pine\frequire\0", "config", "rose-pine")
-time([[Config for rose-pine]], false)
+-- Config for: nightfox.nvim
+time([[Config for nightfox.nvim]], true)
+try_loadstring("\27LJ\2\nü\1\0\0\5\0\v\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\3\0005\4\4\0=\4\5\3=\3\a\2B\0\2\0016\0\b\0009\0\t\0'\2\n\0B\0\2\1K\0\1\0\25colorscheme nightfox\bcmd\bvim\foptions\1\0\1\foptions\0\vstyles\1\0\3\rkeywords\tbold\rcomments\vitalic\ntypes\16italic,bold\1\0\4\17dim_inactive\1\20terminal_colors\2\16transparent\1\vstyles\0\nsetup\rnightfox\frequire\0", "config", "nightfox.nvim")
+time([[Config for nightfox.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
