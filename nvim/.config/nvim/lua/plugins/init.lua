@@ -25,9 +25,9 @@ return require("packer").startup(function(use)
           terminal_colors = true,
           dim_inactive = false,
           styles = {
-            comments = "italic",
+            comments = "NONE",
             keywords = "bold",
-            types = "italic,bold",
+            types = "bold",
           },
         },
       })

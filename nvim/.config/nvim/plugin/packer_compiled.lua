@@ -110,7 +110,7 @@ _G.packer_plugins = {
     url = "https://github.com/ThePrimeagen/harpoon"
   },
   ["nightfox.nvim"] = {
-    config = { "\27LJ\2\nü\1\0\0\5\0\v\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\3\0005\4\4\0=\4\5\3=\3\a\2B\0\2\0016\0\b\0009\0\t\0'\2\n\0B\0\2\1K\0\1\0\25colorscheme nightfox\bcmd\bvim\foptions\1\0\1\foptions\0\vstyles\1\0\3\rkeywords\tbold\rcomments\vitalic\ntypes\16italic,bold\1\0\4\17dim_inactive\1\20terminal_colors\2\16transparent\1\vstyles\0\nsetup\rnightfox\frequire\0" },
+    config = { "\27LJ\2\nó\1\0\0\5\0\v\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\3\0005\4\4\0=\4\5\3=\3\a\2B\0\2\0016\0\b\0009\0\t\0'\2\n\0B\0\2\1K\0\1\0\25colorscheme nightfox\bcmd\bvim\foptions\1\0\1\foptions\0\vstyles\1\0\3\rcomments\tNONE\ntypes\tbold\rkeywords\tbold\1\0\4\16transparent\1\vstyles\0\17dim_inactive\1\20terminal_colors\2\nsetup\rnightfox\frequire\0" },
     loaded = true,
     path = "/home/dell/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
     url = "https://github.com/EdenEast/nightfox.nvim"
@@ -160,7 +160,7 @@ _G.packer_plugins = {
 time([[Defining packer_plugins]], false)
 -- Config for: nightfox.nvim
 time([[Config for nightfox.nvim]], true)
-try_loadstring("\27LJ\2\nü\1\0\0\5\0\v\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\3\0005\4\4\0=\4\5\3=\3\a\2B\0\2\0016\0\b\0009\0\t\0'\2\n\0B\0\2\1K\0\1\0\25colorscheme nightfox\bcmd\bvim\foptions\1\0\1\foptions\0\vstyles\1\0\3\rkeywords\tbold\rcomments\vitalic\ntypes\16italic,bold\1\0\4\17dim_inactive\1\20terminal_colors\2\16transparent\1\vstyles\0\nsetup\rnightfox\frequire\0", "config", "nightfox.nvim")
+try_loadstring("\27LJ\2\nó\1\0\0\5\0\v\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\3\0005\4\4\0=\4\5\3=\3\a\2B\0\2\0016\0\b\0009\0\t\0'\2\n\0B\0\2\1K\0\1\0\25colorscheme nightfox\bcmd\bvim\foptions\1\0\1\foptions\0\vstyles\1\0\3\rcomments\tNONE\ntypes\tbold\rkeywords\tbold\1\0\4\16transparent\1\vstyles\0\17dim_inactive\1\20terminal_colors\2\nsetup\rnightfox\frequire\0", "config", "nightfox.nvim")
 time([[Config for nightfox.nvim]], false)
 
 _G._packer.inside_compile = false
